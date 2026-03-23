@@ -56,8 +56,8 @@ ARTIFACTS_DIR: Final[Path] = ROOT_DIR / "artifacts"
 
 # === DECLARE GLOBAL CONSTANTS FOR FILE PATHS ===
 
-DATA_FILE: Final[Path] = DATA_DIR / "clinic_data_case.csv"
-OUTPUT_FILE: Final[Path] = ARTIFACTS_DIR / "anomalies_case.csv"
+DATA_FILE: Final[Path] = DATA_DIR / "clinic_data_brandon.csv"
+OUTPUT_FILE: Final[Path] = ARTIFACTS_DIR / "anomalies_brandon.csv"
 
 
 # === DEFINE THE MAIN FUNCTION ===
