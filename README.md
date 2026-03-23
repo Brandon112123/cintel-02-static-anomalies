@@ -115,6 +115,7 @@ git add -A
 uvx pre-commit run --all-files
 
 uv run python -m cintel.anomaly_detector_brandon
+uv run python -m cintel.anomaly_detector_brandon_custom
 
 uv run ruff format .
 uv run ruff check . --fix
@@ -139,3 +140,45 @@ I modified the pipeline in three ways:
 1. I changed the input dataset from clinic_data_case.csv to clinic_data_brandon.csv.
 2. I changed the output file from anomalies_case.csv to anomalies_brandon.csv.
 3. I adjusted the anomaly detection thresholds by lowering the maximum reasonable age and height values.
+
+## Custom Project
+
+## Overview
+
+This project applies anomaly detection techniques to a global suicide rate dataset.
+
+The pipeline reads a CSV file, identifies unusually high suicide rate values, saves the results to a CSV file, and generates a chart to visualize the top anomalies.
+
+## Dataset
+
+The dataset includes:
+
+- iso_code
+- country
+- year
+- sex
+- age_group
+- suicide_rate
+
+## Features
+
+- Reads data using Polars
+- Detects anomalies based on suicide rate thresholds
+- Outputs anomaly results to CSV
+- Generates a chart of top anomalies
+- Logs execution for debugging and transparency
+
+## Setup
+
+```bash
+uv sync
+```
+
+### Professional Modifications
+
+1. I changed the problem from clinic age and height anomaly detection to global suicide rate anomaly detection.
+2. I changed the input file to `data/suicide_rates_custom.csv`.
+3. I changed the anomaly detection logic to use the `suicide_rate` column.
+4. I changed the output file to `artifacts/suicide_rate_anomalies_brandon.csv`.
+5. I added a chart output file: `artifacts/suicide_rate_anomalies_chart_custom.png`.
+6. I customized the pipeline to better fit a real-world dataset.
