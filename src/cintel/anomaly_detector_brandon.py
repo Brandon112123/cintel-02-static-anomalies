@@ -21,12 +21,12 @@ Purpose
 
 Paths (relative to repo root)
 
-    INPUT FILE: data/clinic_data_case.csv
-    OUTPUT FILE: artifacts/anomalies_case.csv
+    INPUT FILE: data/clinic_data_brandon.csv
+    OUTPUT FILE: artifacts/anomalies_brandon.csv
 
 Terminal command to run this file from the root project folder
 
-    uv run python -m cintel.anomaly_detector_case
+    uv run python -m cintel.anomaly_detector_brandon
 
 OBS:
   Don't edit this file - it should remain a working example.

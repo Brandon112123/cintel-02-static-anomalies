@@ -132,6 +132,10 @@ git push -u origin main
 - Use the **UP ARROW** and **DOWN ARROW** in the terminal to scroll through past commands.
 - Use `CTRL+f` to find (and replace) text within a file.
 
-## Adjust anomaly detection thresholds
+## Professional Modification
 
-Lowered max age from 16 to 15 and max height from 72 to 70 to make anomaly detection more strict and increase sensitivity.
+I modified the pipeline in three ways:
+
+1. I changed the input dataset from clinic_data_case.csv to clinic_data_brandon.csv.
+2. I changed the output file from anomalies_case.csv to anomalies_brandon.csv.
+3. I adjusted the anomaly detection thresholds by lowering the maximum reasonable age and height values.
