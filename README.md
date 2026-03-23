@@ -131,3 +131,7 @@ git push -u origin main
 
 - Use the **UP ARROW** and **DOWN ARROW** in the terminal to scroll through past commands.
 - Use `CTRL+f` to find (and replace) text within a file.
+
+## Adjust anomaly detection thresholds
+
+Lowered max age from 16 to 15 and max height from 72 to 70 to make anomaly detection more strict and increase sensitivity.
